@@ -100,8 +100,12 @@ a {
   justify-items: center;
   gap: 30px;
   height: 300px;
-  overflow: hidden;
   position: relative;
+  overflow: auto;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 1px;
 }
 
 .content__list-item {
@@ -121,7 +125,7 @@ a {
 
 .content__video-card {
   width: 395px;
-  height: 105px;
+  /*height: 105px;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -156,6 +160,13 @@ a {
 
 .search-form__submit-button {
   padding: 6px 74px;
+}
+
+.more-button {
+  width: fit-content;
+  padding: 6px 145px;
+  margin-bottom: 1px;
+  outline: #fff 1px solid;
 }
 
 .search-form__fieldset-title {
