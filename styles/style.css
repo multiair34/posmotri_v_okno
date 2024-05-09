@@ -72,12 +72,11 @@ a {
 
 .search-form {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   /*display: flex;*/
   align-items: flex-end;
   gap: 40px;
   align-self: flex-start;
-  justify-content: space-between;
   padding-top: 15px;
 }
 
@@ -191,3 +190,27 @@ a {
   border-right: none;
 }
 
+.search-form__textfield:focus, :active {
+  outline: none;
+}
+
+.search-form__checkbox-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.search-form__checkbox {
+  position: absolute;
+}
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  padding-right: 20px;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  border: 1px solid #fff;
+  
+}
