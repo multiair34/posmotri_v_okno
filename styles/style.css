@@ -125,24 +125,7 @@ a {
 .content__video-card {
   width: 395px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.content__video-card-thumbnail {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.content__video-card-title {
-  max-width: 200px;
-  font-family: Oswald ,serif;
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  grid-template-columns: 199px 198px;
 }
 
 .content__accent {
@@ -166,8 +149,8 @@ a {
 
 .more-button {
   width: fit-content;
-  padding: 6px 144px;
-  margin-bottom: 1px;
+  padding: 6px 143px;
+  margin-bottom: 2px;
   border: 1px solid #fff;
 }
 
@@ -234,12 +217,34 @@ a {
 }
 
 .content__video-card-description-container {
+  width: 197px;
+  height: 110px;
   padding-top: 5px;
   padding-left: 2px;
 }
 
+.content__video-card-title {
+  font-family: Oswald ,serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
 .content__video-card-description {
+  height: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   line-height: 17px;
+}
+
+.content__video-card-thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .button:active {
@@ -269,12 +274,12 @@ a {
   outline-offset: 1px;
 }
 
-.content__card-link:focus-visible {
-  outline: 1px solid #fff;
-}
-
 .content__card-link:focus {
   outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .search-form__textfield:focus-visible {
